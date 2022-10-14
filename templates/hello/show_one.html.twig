@@ -1,5 +1,10 @@
-<div>
-  <p>The current message is:
-    {{ message }}
-  </p>
-</div>
+{% extends "base.html.twig" %}
+
+{% block body %}
+  <div>
+    <p>The current message is:
+      {{ message.message }}
+    </p>
+    {{ include ("hello/_message-date.html.twig", {message:message}) }}
+  </div>
+{% endblock %}
