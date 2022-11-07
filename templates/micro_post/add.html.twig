@@ -4,6 +4,10 @@
   Create new post
 {% endblock %}
 
+{% block breadcrumbs %}
+  › Add
+{% endblock %}
+
 {% block body %}
   {{ include ('micro_post/_form.html.twig') }}
 {% endblock %}
